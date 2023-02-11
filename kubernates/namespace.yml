@@ -1,0 +1,6 @@
+kind: Namespace
+apiVersion: v1
+metadata:
+  name: python-docker-namespace
+  labels:
+  name: python-docker-namespace

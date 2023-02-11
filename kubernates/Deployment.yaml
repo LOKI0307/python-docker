@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: python-docker-deployment
+  labels:
+    app: python-docker
+  namespace: python-docker-namespace
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: python-docker
+  template:
+    metadata:
+      labels:
+        app: python-docker
+
+    spec:
+      containers:
+      - name: python-docker
+        image: vlosharma/python-docker:v2.0.0
+        ports:
+        - containerPort: 5000

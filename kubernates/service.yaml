@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: ingress-python-docker
+  namespace: python-docker-namespace
+spec:
+  type: NodePort
+  ports:
+  - name: http
+    port: 5000
+    targetPort: 5000
+    nodePort: 30001
+    protocol: TCP
+selector:
+  app: python-docker
