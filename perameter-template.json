@@ -1,0 +1,22 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+      "appName": {
+        "value": "test1027"
+      },
+      "webTestName": {
+        "value": "sample-test"
+      },
+      "URL": {
+        "value": "https://google.com"
+      },
+      "actionGroupId": {
+        "value": "/subscriptions/91d8605f-b80a-4b1c-bca1-6ec55bfd1deb/resourceGroups/ConsoleInsightRSGroup/providers/microsoft.insights/components/test1027"
+      },
+      "location": {
+        "value": "Central US"
+      }
+      
+    }
+  }
