@@ -3,7 +3,7 @@
 # Add steps that build, run tests, deploy, and more:
 # https://aka.ms/yaml
 parameters:
-- name: myStringName
+- name: app-servicename
   type: string
   default: a string value
 
@@ -20,5 +20,5 @@ steps:
 - script: |
     echo Add other tasks to build, test, and deploy your project.
     echo See https://aka.ms/yaml
-    echo $myStringName
+    echo $app-servicename
   displayName: 'Run a multi-line script'
